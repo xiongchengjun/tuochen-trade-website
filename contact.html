@@ -6,32 +6,9 @@
     <title>Contact Us - Tuochen Trade</title>
     <meta name="description" content="Contact Tuochen Trade for labeling machine inquiries, quotes, and export assistance. We export packaging equipment worldwide. Email, WhatsApp, or fill out the form.">
     <link rel="stylesheet" href="styles.css">
-    <!-- EmailJS SDK -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            // TODO: Replace with your actual EmailJS public key
-            emailjs.init('YOUR_PUBLIC_KEY');
-        })();
-    </script>
 </head>
 <body>
     <header>
-        <nav class="container">
-            <a href="index.html" class="logo">TUOCHEN TRADE</a>
-            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="page-header">
         <div class="container">
             <h1>Contact Us</h1>
             <p>Get in touch for inquiries, quotes, and product information</p>
@@ -45,8 +22,8 @@
                     <h2>Send Inquiry</h2>
                     <p>Fill out the form below and we'll respond within 24 hours.</p>
                     
-                    <!-- EmailJS Form -->
-                    <form id="contact-form" class="contact-form">
+                    <!-- Mailto Form -->
+                    <form id="contact-form" class="contact-form" onsubmit="sendMail(); return false;">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="from_name" required>
@@ -103,35 +80,39 @@
                     </form>
 
                     <script>
-                        document.getElementById('contact-form').addEventListener('submit', function(e) {
-                            e.preventDefault();
+                        function sendMail() {
+                            var name = document.getElementById('name').value;
+                            var email = document.getElementById('email').value;
+                            var company = document.getElementById('company').value;
+                            var country = document.getElementById('country').value;
+                            var phone = document.getElementById('phone').value;
+                            var product = document.getElementById('product').value;
+                            var quantity = document.getElementById('quantity').value;
+                            var message = document.getElementById('message').value;
                             
-                            const btn = this.querySelector('button[type="submit"]');
-                            const status = document.getElementById('form-status');
-                            btn.disabled = true;
-                            btn.textContent = 'Sending...';
+                            var subject = 'New Inquiry from ' + name;
+                            var body = 'Name: ' + name + '%0D%0A';
+                            body += 'Email: ' + email + '%0D%0A';
+                            body += 'Company: ' + company + '%0D%0A';
+                            body += 'Country: ' + country + '%0D%0A';
+                            body += 'Phone/WhatsApp: ' + phone + '%0D%0A';
+                            body += 'Product: ' + product + '%0D%0A';
+                            body += 'Quantity: ' + quantity + '%0D%0A';
+                            body += '%0D%0A';
+                            body += 'Message:%0D%0A' + message;
                             
-                            // TODO: Replace YOUR_SERVICE_ID with your EmailJS Service ID (e.g., 'service_vaaos4')
-                            // TODO: Replace YOUR_TEMPLATE_ID with your EmailJS Template ID
-                            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-                                .then(function() {
-                                    status.style.display = 'block';
-                                    status.style.backgroundColor = '#d4edda';
-                                    status.style.color = '#155724';
-                                    status.textContent = '✅ Inquiry sent successfully! We will reply within 24 hours.';
-                                    document.getElementById('contact-form').reset();
-                                }, function(error) {
-                                    status.style.display = 'block';
-                                    status.style.backgroundColor = '#f8d7da';
-                                    status.style.color = '#721c24';
-                                    status.textContent = '❌ Sending failed. Please email us directly at 919561505@qq.com';
-                                    console.error('EmailJS error:', error);
-                                })
-                                .finally(function() {
-                                    btn.disabled = false;
-                                    btn.textContent = 'Send Inquiry';
-                                });
-                        });
+                            var mailto_link = 'mailto:919561505@qq.com?subject=' + encodeURIComponent(subject) + '&body=' + body;
+                            
+                            var status = document.getElementById('form-status');
+                            status.style.display = 'block';
+                            status.style.backgroundColor = '#d4edda';
+                            status.style.color = '#155724';
+                            status.innerHTML = '✅ Opening your email client... Please send the email to complete your inquiry.';
+                            
+                            window.location.href = mailto_link;
+                            
+                            document.getElementById('contact-form').reset();
+                        }
                     </script>
                 </div>
                 
