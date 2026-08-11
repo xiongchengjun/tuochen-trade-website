@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tuochen-trade.com/sitemap.xml
+Sitemap: https://tuochen-trade-website.vercel.app/sitemap.xml

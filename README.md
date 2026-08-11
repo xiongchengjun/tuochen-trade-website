@@ -1,2 +1,2 @@
 # tuochen-trade-website
-B2B labeling machine export website
+Used Japanese servo motors & drives export website (Panasonic / Mitsubishi / Yaskawa)
