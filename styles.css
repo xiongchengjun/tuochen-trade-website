@@ -277,6 +277,18 @@ header nav {
     text-align: left;
 }
 
+.products-full .product-group-subtitle {
+    text-align: left;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 34px 0 16px;
+    padding: 8px 12px;
+    border-left: 4px solid var(--primary);
+    background: #f5f8ff;
+    color: var(--dark);
+    scroll-margin-top: 80px;
+}
+
 .product-item {
     display: flex;
     gap: 30px;
