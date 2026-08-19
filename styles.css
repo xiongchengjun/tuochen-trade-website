@@ -263,6 +263,7 @@ header nav {
     padding-bottom: 10px;
     border-bottom: 2px solid var(--primary);
     color: var(--dark);
+    scroll-margin-top: 80px;
 }
 
 .products-full .product-group-title:first-child {
