@@ -25,6 +25,11 @@
         <div class="container">
             <h1>Industrial Components &amp; Servo Systems In Stock</h1>
             <p>OMRON sensors · DELIXI circuit breakers · Mitsubishi servo systems — brand new and tested used units ready to ship from Guangzhou</p>
+            <div class="product-search-wrap">
+                <input type="text" id="product-search" placeholder="Search by model or brand — e.g. E3Z-D62, DZ47-125, OMRON, Mitsubishi..." autocomplete="off">
+                <button type="button" id="search-clear" aria-label="Clear search" style="display:none;">✕</button>
+            </div>
+            <p id="search-empty" style="display:none;">No products match "<span id="search-q"></span>". <a href="contact.html">Send us your model</a> — we source on request within 24 hours.</p>
         </div>
     </section>
 
@@ -381,6 +386,71 @@
             var nav = document.querySelector('.nav-links');
             nav.classList.toggle('active');
         }
+
+        // --- Product search: live filter by model / brand / keyword ---
+        function productSearchInit() {
+            var input = document.getElementById('product-search');
+            var clear = document.getElementById('search-clear');
+            var empty = document.getElementById('search-empty');
+            var emptyQ = document.getElementById('search-q');
+            if (!input) return;
+
+            // A group title stays visible if any product below it is currently
+            // shown. Main group titles span sub-group titles; sub-group titles
+            // stop at the next sub-group title.
+            function groupHasVisible(titleEl) {
+                var isSub = titleEl.classList.contains('product-group-subtitle');
+                var el = titleEl.nextElementSibling;
+                while (el) {
+                    if (el.classList && el.classList.contains('product-group-title')) break;
+                    if (isSub && el.classList && el.classList.contains('product-group-subtitle')) break;
+                    if (el.classList && el.classList.contains('product-item') && el.style.display !== 'none') return true;
+                    el = el.nextElementSibling;
+                }
+                return false;
+            }
+
+            function apply() {
+                var q = input.value.trim().toLowerCase();
+                var items = document.querySelectorAll('.product-item');
+                var total = 0;
+                items.forEach(function (item) {
+                    var hit = q === '' || item.textContent.toLowerCase().indexOf(q) !== -1;
+                    item.style.display = hit ? '' : 'none';
+                    if (hit) total++;
+                });
+                var groups = document.querySelectorAll('.product-group-title, .product-group-subtitle');
+                groups.forEach(function (g) {
+                    var vis = q === '' || groupHasVisible(g);
+                    g.style.display = vis ? '' : 'none';
+                    var sib = g.nextElementSibling;
+                    if (sib && sib.classList && sib.classList.contains('product-group-desc')) {
+                        sib.style.display = vis ? '' : 'none';
+                    }
+                });
+                if (empty) empty.style.display = (q !== '' && total === 0) ? 'block' : 'none';
+                if (emptyQ) emptyQ.textContent = input.value.trim();
+                if (clear) clear.style.display = q === '' ? 'none' : 'inline-flex';
+            }
+
+            input.addEventListener('input', apply);
+
+            if (clear) {
+                clear.addEventListener('click', function () {
+                    input.value = '';
+                    apply();
+                    input.focus();
+                });
+            }
+
+            // Support deep links like products.html?q=DZ47-125
+            var m = window.location.search.match(/[?&]q=([^&]+)/);
+            if (m) {
+                try { input.value = decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (e) {}
+                apply();
+            }
+        }
+        productSearchInit();
 
         // --- Lightbox with mouse-wheel zoom, drag pan and pinch zoom ---
         var lbScale = 1, lbPanX = 0, lbPanY = 0;
