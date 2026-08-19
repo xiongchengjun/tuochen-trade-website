@@ -28,6 +28,9 @@
             <p>Brand new OMRON sensors and DELIXI circuit breakers, plus tested used Mitsubishi servo motors and drives. In stock in Guangzhou, shipped worldwide.</p>
             <a href="products.html#industrial" class="btn btn-primary">View Stock</a>
             <a href="https://wa.me/8615629138618" target="_blank" class="btn btn-secondary">WhatsApp Us</a>
+            <div class="product-search-wrap">
+                <input type="text" id="home-search" placeholder="Search by model or brand — e.g. E3Z-D62, DZ47-125, MR-J4..." autocomplete="off" aria-label="Search products">
+            </div>
         </div>
     </section>
 
@@ -170,6 +173,17 @@
     <script>
         function toggleMenu() {
             document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Homepage search: Enter jumps to products page and filters by model
+        var homeSearch = document.getElementById('home-search');
+        if (homeSearch) {
+            homeSearch.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    var q = homeSearch.value.trim();
+                    if (q) window.location.href = 'products.html?q=' + encodeURIComponent(q);
+                }
+            });
         }
     </script>
 </body>
