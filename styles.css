@@ -256,6 +256,26 @@ header nav {
     gap: 30px;
 }
 
+.products-full .product-group-title {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 45px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+    color: var(--dark);
+}
+
+.products-full .product-group-title:first-child {
+    margin-top: 0;
+}
+
+.product-group-desc {
+    color: #666;
+    font-size: 0.95rem;
+    margin: -10px 0 10px;
+    text-align: left;
+}
+
 .product-item {
     display: flex;
     gap: 30px;
