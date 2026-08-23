@@ -285,6 +285,38 @@ header nav {
     text-align: left;
 }
 
+.jump-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 6px;
+    padding: 14px;
+    background: #f5f8ff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.jump-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.jump-link:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
 .products-full .product-group-subtitle {
     text-align: left;
     font-size: 1.15rem;
