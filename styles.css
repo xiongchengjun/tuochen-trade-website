@@ -984,6 +984,22 @@ header nav {
     color: var(--gray);
 }
 
+.related-section {
+    padding: 60px 0 30px;
+    background: #fff;
+}
+
+.related-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.related-section .section-desc {
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
 /* CTA Section */
 .cta {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
