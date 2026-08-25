@@ -1,3 +1,4 @@
 .trash/
 *.bak
 generated_tmp/
+outreach_private/
