@@ -1,7 +1,7 @@
 # OMRON E3Z-T61 客户开发信 / 询价话术
 
 **产品**: OMRON E3Z-T61 Through-beam Photoelectric Sensor 15m NPN
-**单价**: US$45.99（含国际免邮）
+**单价**: US$39.00 / pair（economy shipping 起步，DHL 加急可选）
 **你的卖点**: 全新原装、一对(发射+接收)、15m 远距离、IP67、广州现货发全球
 
 ---
@@ -21,7 +21,7 @@
 > - **Output:** NPN, DC 12–24 V
 > - **Protection:** IP67
 > - **Condition:** Brand new, original OMRON
-> - **Price:** **US $45.99 / pair**, free international shipping
+> - **Price:** **US $39.00 / pair**, economy shipping (expedited DHL available on request)
 >
 > These are perfect for belt conveyors, warehouse doors, and long-range automation lines. We offer bulk pricing for larger orders.
 >
@@ -42,13 +42,13 @@
 > Hello, this is Tuochen Trade. We supply brand-new industrial automation parts. Do you purchase OMRON sensors?
 >
 > **第二步 抛卖点：**
-> We have OMRON E3Z-T61 through-beam sensors (15m, NPN, IP67) in stock — original, brand new. Price US$45.99/pair with free shipping. Bulk discounts available.
+> We have OMRON E3Z-T61 through-beam sensors (15m, NPN, IP67) in stock — original, brand new. Price US$39.00/pair, economy shipping (expedited DHL on request). Bulk discounts available.
 
 ---
 
 ## 3. 报价单要点（客户确认要买后再发）
 
-- **Unit price:** US $45.99 / pair
+- **Unit price:** US $39.00 / pair (economy shipping)
 - **MOQ:** 1 pair (sample order welcome)
 - **Lead time:** 2–3 days after payment
 - **Payment:** Aliexpress / direct bank transfer / 万里汇
