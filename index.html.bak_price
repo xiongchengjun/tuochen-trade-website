@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Components Supplier | CHINT Breakers, CJX2 Contactors, OMRON Sensors | Tuochen Industrial</title>
+    <meta name="description" content="Tuochen Industrial supplies brand new industrial components — CHINT circuit breakers, CJX2 contactors, NXBLE RCBO, OMRON sensors, DIN rail terminals — plus tested used Mitsubishi servo systems. In stock, shipped worldwide.">
+    <meta name="keywords" content="industrial components, CHINT circuit breaker, CJX2 contactor, NXBLE RCBO, NXB-63 MCB, OMRON sensor, terminal block, Mitsubishi servo, used servo motor, China electrical supplier">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">TUOCHEN INDUSTRIAL</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="mr-j4-70a.html" class="nav-servo-btn">Used Servo</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Industrial Components &amp; Servo Systems</h1>
+            <p>Brand new CHINT circuit breakers, CJX2 contactors and NXBLE RCBOs, OMRON sensors and DIN rail terminals, plus tested used Mitsubishi servo motors and drives. In stock in Guangzhou, shipped worldwide.</p>
+            <a href="products.html#industrial" class="btn btn-primary">View Stock</a>
+            <a href="https://wa.me/8615629138618" target="_blank" class="btn btn-secondary">WhatsApp Us</a>
+            <div class="product-search-wrap">
+                <input type="text" id="home-search" placeholder="Search by model or brand — e.g. E3Z-D62, DZ47-125, MR-J4..." autocomplete="off" aria-label="Search products">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>🔧 Tested Before Shipping</h3>
+                    <p>Every motor and drive is bench-tested. You receive a test video with each unit.</p>
+                </div>
+                <div class="feature">
+                    <h3>🛡️ 30-Day Inspection Period</h3>
+                    <p>30-day inspection period on all items. Replacement or refund if a unit fails within the period.</p>
+                </div>
+                <div class="feature">
+                    <h3>📦 In Stock in Guangzhou</h3>
+                    <p>Fast dispatch from our Guangzhou warehouse via sea or air freight, worldwide.</p>
+                </div>
+                <div class="feature">
+                    <h3>💬 Quick Response</h3>
+                    <p>WhatsApp +86 156 2913 8618. English-speaking. Quotes within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-preview">
+        <div class="container">
+            <h2>Industrial Components In Stock</h2>
+            <p class="section-desc">Brand-new industrial automation components from top Chinese manufacturers — ready to ship worldwide.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="font-size:56px;display:flex;align-items:center;justify-content:center;height:140px;background:#f8f8f8;border-radius:8px;">⚡</div>
+                    <h3>Circuit Breakers</h3>
+                    <p>CHINT NXB-63 &amp; NXBLE-63 MCBs and RCBOs, up to 63A. 1P/2P/3P/1P+N/3P+N, C16-C63. Brand new, original.</p>
+                    <a href="products.html#breakers">View Stock →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="font-size:56px;display:flex;align-items:center;justify-content:center;height:140px;background:#f8f8f8;border-radius:8px;">🔌</div>
+                    <h3>AC Contactors</h3>
+                    <p>CHINT CJX2 series contactors, 9A–1210, 220V coil. Plus thermal relays and time relays. Flexible MOQ, single unit to full container.</p>
+                    <a href="products.html#contactors">View Stock →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="font-size:56px;display:flex;align-items:center;justify-content:center;height:140px;background:#f8f8f8;border-radius:8px;">📡</div>
+                    <h3>OMRON Sensors</h3>
+                    <p>E3Z photoelectric sensors — D61/D62/D81 diffuse, R61 retro-reflective, LS61 distance-setting, T61 through-beam. CE · UL · RoHS, IP67.</p>
+                    <a href="products.html#omron">View Stock →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="font-size:56px;display:flex;align-items:center;justify-content:center;height:140px;background:#f8f8f8;border-radius:8px;">🧲</div>
+                    <h3>Relays &amp; Terminals</h3>
+                    <p>JQX-13F and HH52P intermediate relays with sockets, DIN rail terminal blocks (JCUK-2.5N kit). Brand new original.</p>
+                    <a href="products.html#contactors">View Stock →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="font-size:56px;display:flex;align-items:center;justify-content:center;height:140px;background:#f8f8f8;border-radius:8px;">🔘</div>
+                    <h3>Push Buttons &amp; Switches</h3>
+                    <p>YIJIA 22mm metal push buttons with illuminated LED ring, 1NO+1NC, IP65. Plus KG316T timers, HG micro &amp; limit switches.</p>
+                    <a href="products.html#push-buttons">View Stock →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="font-size:56px;display:flex;align-items:center;justify-content:center;height:140px;background:#f8f8f8;border-radius:8px;">⚙️</div>
+                    <h3>Used Servo Systems</h3>
+                    <p>Tested used Mitsubishi MR-J4 series servo motors and drives, bench-tested with video proof. Panasonic, Yaskawa on request.</p>
+                    <a href="products.html#used-servo">View Stock →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Buy From Us?</h2>
+            <div class="advantage-grid">
+                <div class="advantage">
+                    <span class="number">01</span>
+                    <h4>Real Products, Real Photos</h4>
+                    <p>Brand new original components and tested used servo units — we send actual photos and test videos of the exact item you buy.</p>
+                </div>
+                <div class="advantage">
+                    <span class="number">02</span>
+                    <h4>Flexible MOQ</h4>
+                    <p>Buy a single unit to test, or a full container. Volume pricing available.</p>
+                </div>
+                <div class="advantage">
+                    <span class="number">03</span>
+                    <h4>Complete Export Docs</h4>
+                    <p>Commercial invoice, packing list, test report and photos. FOB Guangzhou / CIF available.</p>
+                </div>
+                <div class="advantage">
+                    <span class="number">04</span>
+                    <h4>Secure Payment</h4>
+                    <p>T/T or WorldFirst account. 30% deposit, balance before shipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Looking for a Specific Model?</h2>
+            <p>Send us the brand and model number — we will check stock and reply within 24 hours.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/8615629138618" target="_blank" class="btn btn-primary">WhatsApp Now</a>
+                <a href="mailto:xiongchengjun66@gmail.com" class="btn btn-secondary">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>TUOCHEN INDUSTRIAL</h4>
+                    <p>Supplier of brand new industrial components and tested used Japanese servo systems. Exporting from Guangzhou to factories worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html#breakers">Circuit Breakers</a></li>
+                        <li><a href="products.html#contactors">Contactors &amp; Relays</a></li>
+                        <li><a href="products.html#omron">OMRON Sensors</a></li>
+                        <li><a href="mr-j4-70a.html">Mitsubishi MR-J</a></li>
+                        <li><a href="jcuk-terminal-kit.html">Terminal Block Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="payment.html">Payment Methods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 <a href="mailto:xiongchengjun66@gmail.com">xiongchengjun66@gmail.com</a></li>
+                        <li>📱 <a href="tel:+8615629138618">+86 156 2913 8618</a></li>
+                        <li>💬 <a href="https://wa.me/8615629138618" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tuochen Industrial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Homepage search: Enter jumps to products page and filters by model
+        var homeSearch = document.getElementById('home-search');
+        if (homeSearch) {
+            homeSearch.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter') {
+                    var q = homeSearch.value.trim();
+                    if (q) window.location.href = 'products.html?q=' + encodeURIComponent(q);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
